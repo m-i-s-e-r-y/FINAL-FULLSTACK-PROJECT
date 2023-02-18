@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script defer src="../templates/js/login.js"></script>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/login.css">
+    
+</head>
+<body>
+    <header class="header">
+
+        <h1> Login Page </h1>
+
+    </header>
+
+    <main class="container">
+        <form>
+            <h2> Login </h2>
+            <input type="text" name="username" pattern="[A-Za-z]{2,}" placeholder="Enter your username" required>
+            <input type="password" name="password" pattern="^(?=.*[a-zA-Z])(?=\w*[0-9])\w{8,}$" placeholder="Enter your password" required />
+            <input type="submit">
+            <p class="error-message"></p>
+        </form> 
+        
+    </main>
+    
+</body>
+</html>

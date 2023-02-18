@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/add-car.css">
+    <script defer src="/templates/js/add-car.js"></script>
+    <title>Test</title>
+</head>
+<body>
+    <header class="header">
+        <figure class="logo-wrapper">
+            <img class="logo" src="../images/website-logo.png" alt="logo">
+        </figure>
+        <nav class="navbar"> 
+            <ul>
+                <li> <a href="about.html">About Page</a></li>
+                <li> <a href="addcar.html"> Cars List </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1> Wanna add your car to the website? you are one step away!</h1>
+        <article class="add-car-wrapper">
+            <form action="/addcar" method="POST">
+                <label> Car Type </label>
+                <input type="text" pattern="[a-zA-Z]+" name="Type" placeholder="Enter car type" required/>
+
+                <label> Car manufacturer </label>
+                <input type="text" pattern="[a-zA-Z]+" name="Manufacturer" placeholder="Enter car manufacturer"required/>
+
+
+                <label> Car model </label>
+                <input type="text" pattern="[a-zA-Z0-9]+" name="Model" placeholder="Enter car model" required/>
+
+                <label> Creation Year </label>
+                <input type="number" min="1900" max="2099" name="Year" required />
+
+            
+                <label> Plates number </label>
+                <input type="number" pattern="[0-9]+" min="1000000" max="99999999" name="PlatesNumber" placeholder="Enter plates Number " required/>
+
+                <label> Rent price per day </label>
+                <input type="number" min="10" name="RentalPrice" pattern="[0-9]" placeholder="Enter rental price per day " required/>
+
+                <label> Car image </label>
+                <input type="file"  name="Image" accept="image/*" required>
+                <input type="submit" value="Add Car">
+            </form>
+
+            <figure class="img-fig">
+                <img src="../images/car-img.png" alt="car image">
+            </figure>
+        </article>
+        <p class="err-message"> </p>
+
+        <div class="articleContainer"> </div>
+
+    </main> 
+
+     <footer class="footer">
+        <ul class="socials">
+            <li> <a href="facebook.com" target="blank"> <i class="fa fa-facebook-square fa-3x"> </i></a></li>
+            <li> <a href="github.com" target="blank"> <i class="fa fa-github fa-3x"></i></a></li>
+        </ul>
+  
+        <h2> Sobhi & Omar </h2>
+        <span> Copyright © 2022 ☁️ </span>
+        <span> All trademarks and copyrights belong to their respective owners. </span>
+    </footer>
+    
+</body>
+</html>
